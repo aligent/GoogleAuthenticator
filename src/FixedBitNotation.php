@@ -193,7 +193,7 @@ final class FixedBitNotation
      * @param bool   $strict        Returns null if $encodedString contains
      *                              an undecodable character
      */
-    public function decode($encodedString, $caseSensitive = true, $strict = false): string
+    public function decode($encodedString, $caseSensitive = true, $strict = false): ?string
     {
         if (!$encodedString || !\is_string($encodedString)) {
             // Empty string, nothing to decode
